@@ -42,11 +42,15 @@
         .container {
             width: 90%;
             margin: auto;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             padding: 20px;
             background-color: #f0f0f0;
             box-sizing: border-box;
-            margin-top: 90px;
+            margin-bottom: 3rem;
+        }
+        .container1 {
+            margin-bottom: 2rem;
+            margin-top: 7rem;
         }
         h2, p {
             font-size: 1em;
@@ -78,27 +82,57 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-logo">AssistBOT</div>
-        <div class="navbar-links">
-            <a href="index.html">Home</a>
-            <a href="tutorial.html">Tutorial</a>
-            <a href="donate.html">Donate</a>
+    <div class="container1">
+        <div class="navbar">
+            <div class="navbar-logo">AssistBOT</div>
+            <div class="navbar-links">
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <h1>Welcome to AssistBOT</h1>
-        <p>AssistBOT is a free software, created with the aim of leveling the playing field for all players. We know that not everyone can afford the cost of a paid macro or bot, and that's why AssistBOT is distributed for free.
-        Programmed entirely by a dedicated developer, AssistBOT is more than just a software - it's a statement that all players deserve a fair and equitable gaming experience.</p>
-        <h2>Commitment to the Community</h2>
-        <p>AssistBOT is not just a one-person project - it's a community effort. We are constantly working with the community to improve and enhance AssistBOT. Your feedback and suggestions are invaluable to us and we are always eager to hear what you have to say.</p>
-        <h2>Accessibility for All Players</h2>
-        <p>AssistBOT was created with the intention of being accessible and useful to all players, regardless of their physical abilities. We recognize that each player is unique and that skills can vary greatly. Therefore, AssistBOT has been designed to be flexible and adaptable, allowing all players, including those with disabilities, to play more efficiently and participatively. We believe that everyone should have the opportunity to fully enjoy games, and AssistBOT is a step towards that goal.</p>
-        <h2>Important Note</h2>
-        <p>Although AssistBOT is not allowed by CipSoft, it was developed in a way that is hard to detect. AssistBOT uses image and color recognition techniques, without injecting anything into the game. This allows AssistBOT to operate discreetly, minimizing the risk of detection. However, it is important to remember that the use of any automation software can violate the terms of service of the game and may result in penalties if detected.</p>
-        <p>Join us on the journey to make gaming more accessible and fun for everyone with AssistBOT.</p>
-        <div class="download-section">
-            <a href="./AssistBOT.rar" download>Download AssistBOT beta version</a>
+        <div class="container">
+            <h1>Bem-vindo ao AssistBOT</h1>
+            <p>O AssistBOT é um software gratuito, criado com o objetivo de nivelar o campo de jogo para todos os jogadores. Sabemos que nem todos podem arcar com o custo de um macro ou bot pago, e é por isso que o AssistBOT é distribuído gratuitamente. Programado inteiramente por um desenvolvedor dedicado, o AssistBOT é mais do que apenas um software - é uma declaração de que todos os jogadores merecem uma experiência de jogo justa e equitativa.</p>
+            <p>Embora o AssistBOT não seja permitido pela CipSoft, foi desenvolvido de forma que seja difícil de detectar. O AssistBOT utiliza técnicas de reconhecimento de imagem e cor, sem injetar nada no jogo. Isso permite que o AssistBOT opere discretamente, minimizando o risco de detecção. No entanto, é importante lembrar que o uso de qualquer software de automação pode violar os termos de serviço do jogo e pode resultar em penalidades se detectado.</p>
+            <p>Junte-se a nós na jornada para tornar os jogos mais acessíveis e divertidos para todos com o AssistBOT.</p>
+            <div class="download-section">
+                <a href="./AssistBOT.rar" download>Download da versão beta do AssistBOT</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Como Usar o AssistBOT?</h1>
+            <strong>Atenção: É essencial abrir o AssistBOT com permissão de administrador.</strong>
+
+            <h2>Passo 1: Baixar o OBS</h2>
+            <p>Primeiro, você precisa baixar o OBS (Open Broadcaster Software) diretamente do site oficial. Recomendamos que você baixe a versão mais recente para garantir um desempenho otimizado e seguro. Após baixar o software, siga as instruções na tela para instalar o OBS no seu computador.</p>
+
+            <h2>Passo 2: Capturar a Tela do Tibia + Configuração de Opacidade</h2>
+            <p>Com o OBS e o Tibia abertos, no OBS, clique em `+` na caixa `Fontes` e escolha `Captura de Jogo`. Na janela que se abre, selecione o modo de captura, escolha uma janela específica. Em seguida, selecione a janela do Tibia na caixa que se abre abaixo e clique em `OK`.</p>
+            <p><em><img src="./obs.gif" alt="configurando obs" style="width: 60rem;"></em></p>
+
+            <h2>Passo 3: Ativar Opacidade</h2>
+            <p>Com o OBS aberto e o Tibia espelhado, faça login na sua conta e acesse o seu personagem. Os próximos passos são: primeiro, coloque o espelhamento do Tibia feito pelo OBS em tela cheia e abra o Tibia sobre a tela do OBS. Em seguida, clique no AssistBOT e pressione o botão para ativar a opacidade. Você notará que a janela do seu Tibia se tornou "invisível" e você só pode controlá-la através do espelhamento do OBS.</p>
+            <p><em><img src="./opacity.gif" alt="ativando opacidade" style="width: 60rem;"></em></p>
+
+            <h2>Capturando Posições e Configurando Teclas de Atalho</h2> 
+            <p>Para capturar a posição e RGB, certifique-se de que a opacidade está ativada. Clique no botão de posição e posicione o mouse sobre a cor do seu colar SSA e anel might. Pressione a tecla "Insert" para capturar, em seguida, clique em "OK" e selecione sua tecla de atalho. A cura e o uso automático de SSA/anel might funcionam da mesma maneira. Clique em posição, coloque o mouse sobre a cor onde você deseja curar o mana e HP, pressione a tecla "Insert", selecione sua tecla de atalho e clique em "Iniciar".</p> 
+            <p><em><img src="./manahp.gif" alt="posição de mana e hp" style="width: 60rem;"></em></p>
+            <p><em><img src="./ssa.gif" alt="posição de ssa" style="width: 60rem;"></em></p>
+
+            <p>Após capturar a posição e RGB, use as teclas de atalho descritas no programa para habilidades, auto hur, utamo, utura e comida. Atribuir as teclas de atalho corretas para essas ações permitirá que o AssistBOT execute as tarefas desejadas de forma eficaz dentro do jogo. Depois de pressionar iniciar, a janela do Tibia entra em foco e a automação é executada com base nas configurações do usuário. Se desejar parar o BOT, basta pressionar F12, e você retornará à tela de configuração, e o programa será interrompido. Após esses passos, basta configurar o seu AssistBOT, clicar em iniciar, salvar suas configurações e aproveitar o jogo.</p>
+
+        </div>
+
+        <div class="container">
+            <h1>Contribua conosco</h1>
+            <p>O AssistBOT é um software gratuito e está em constante desenvolvimento. Para garantir que possamos continuar a melhorar e manter o software acessível a todos, contamos com a colaboração da comunidade. Sua doação é essencial para nos ajudar a cobrir os custos de desenvolvimento, manutenção e hospedagem, além de incentivar o engajamento da comunidade no projeto.</p>
+            <p>Como um projeto que valoriza a equidade e a acessibilidade, acreditamos que a colaboração da comunidade é essencial para o sucesso contínuo do AssistBOT. Sua contribuição nos permite dedicar mais recursos para melhorar o software, garantindo que ele permaneça gratuito e acessível a todos os jogadores.</p>
+            <p>independentemente do valor, sua doação é muito apreciada e contribui diretamente para o avanço do AssistBOT e para a promoção de uma experiência de jogo mais inclusiva e equitativa para todos. Agradecemos sinceramente o seu apoio!</p>
+            <div class="donation-options">
+                <h3>Faça uma Doação</h3>
+                <p>Se você estiver no Brasil, pode fazer uma doação via PIX:</p>
+                <img src="./pix.png" alt="Código QR do PIX" style="display: block; margin: 0 auto;">
+                <p><strong>Chave Pix:</strong> 50c91b2c-509d-45af-ac47-2018e4b6c988</p>
+            </div>
         </div>
     </div>
 </body>
