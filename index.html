@@ -17,24 +17,27 @@
             text-align: center;
             min-height: 100vh;
             box-sizing: border-box;
+            background-color: #888787;
         }
         .navbar {
-            padding: 20px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center; /* Corrigido o valor da propriedade align-items */
             width: 100%;
             position: fixed;
             top: 0;
-            background-color: #f0f0f0;
+            background-color: #333; /* Cor da barra de navegação */
+            color: #f0f0f0; /* Cor do texto na barra de navegação */
             z-index: 1;
         }
         .navbar-logo {
-            padding-left: 3rem;
-
+            padding: 1rem;
+            height: 2rem;
+            background-color: #333;
             font-family: 'Press Start 2P', cursive;
-            font-size: 1.5em;
-            color: #444;
+            font-size: 2em;
+            color: #f0f0f0;
+            width: 100%;
         }
         .navbar-links {
             padding-right: 3rem; /* Added to create the same distance to the right as the logo has to the left */
@@ -47,13 +50,14 @@
             background-color: #f0f0f0;
             box-sizing: border-box;
             margin-bottom: 3rem;
+            border-radius: 7px;
         }
         .container1 {
             margin-bottom: 2rem;
             margin-top: 7rem;
         }
         h2, p {
-            font-size: 1em;
+            font-size: 1.2em;
             padding: 3px;
         }
         h1 {
@@ -64,6 +68,14 @@
         .download-section {
             margin-top: 20px;
             padding: 10px;
+        }
+        strong {
+            font-size: 1.3em;
+            padding: 3px;
+            color: #ff0000;
+            display: block;
+            margin: auto;
+            text-align: center; /* Centraliza o texto dentro do bloco */
         }
         a {
             display: inline-block;
@@ -79,6 +91,18 @@
         a:hover {
             background-color: #666;
         }
+
+        img {
+            max-width: 100%; /* Garante que os gifs se ajustem à largura da div */
+            height: auto; /* Mantém a proporção original do gif */
+        }
+
+        /* Aumentar o tamanho dos botões em dispositivos móveis */
+        @media (max-width: 768px) {
+            a {
+                padding: 15px 25px; /* Ajuste o padding para aumentar o tamanho dos botões */
+            }
+        }
     </style>
 </head>
 <body>
@@ -90,16 +114,16 @@
         </div>
         <div class="container">
             <h1>Bem-vindo ao AssistBOT</h1>
-            <p>O AssistBOT é um software gratuito, criado com o objetivo de nivelar o campo de jogo para todos os jogadores. Sabemos que nem todos podem arcar com o custo de um macro ou bot pago, e é por isso que o AssistBOT é distribuído gratuitamente. Programado inteiramente por um desenvolvedor dedicado, o AssistBOT é mais do que apenas um software - é uma declaração de que todos os jogadores merecem uma experiência de jogo justa e equitativa.</p>
-            <p>Embora o AssistBOT não seja permitido pela CipSoft, foi desenvolvido de forma que seja difícil de detectar. O AssistBOT utiliza técnicas de reconhecimento de imagem e cor, sem injetar nada no jogo. Isso permite que o AssistBOT opere discretamente, minimizando o risco de detecção. No entanto, é importante lembrar que o uso de qualquer software de automação pode violar os termos de serviço do jogo e pode resultar em penalidades se detectado.</p>
-            <p>Junte-se a nós na jornada para tornar os jogos mais acessíveis e divertidos para todos com o AssistBOT.</p>
+            <p>O AssistBOT é um software gratuito, criado com o objetivo de nivelar o campo de jogo para todos os jogadores.</p>
+            <p>Embora não seja permitido pela CipSoft, desenvolvemos esse bot de forma que seja difícil de detectar. Utilizamos técnicas de reconhecimento de imagem e cor, sem injetar nada no jogo. Isso permite que o AssistBOT opere discretamente, minimizando o risco de detecção. No entanto, é importante lembrar que o uso de qualquer software de automação pode violar os termos de serviço do jogo e pode resultar em penalidades se detectado.</p>
+            <p>Junte-se a nós na jornada para tornar os jogos mais acessíveis e divertidos para todos.</p>
             <div class="download-section">
                 <a href="./AssistBOT.rar" download>Download da versão beta do AssistBOT</a>
             </div>
         </div>
 
         <div class="container">
-            <h1>Como Usar o AssistBOT?</h1>
+            <h1>Como Usar?</h1>
             <strong>Atenção: É essencial abrir o AssistBOT com permissão de administrador.</strong>
 
             <h2>Passo 1: Baixar o OBS</h2>
@@ -118,7 +142,7 @@
             <p><em><img src="./manahp.gif" alt="posição de mana e hp" style="width: 60rem;"></em></p>
             <p><em><img src="./ssa.gif" alt="posição de ssa" style="width: 60rem;"></em></p>
 
-            <p>Após capturar a posição e RGB, use as teclas de atalho descritas no programa para habilidades, auto hur, utamo, utura e comida. Atribuir as teclas de atalho corretas para essas ações permitirá que o AssistBOT execute as tarefas desejadas de forma eficaz dentro do jogo. Depois de pressionar iniciar, a janela do Tibia entra em foco e a automação é executada com base nas configurações do usuário. Se desejar parar o BOT, basta pressionar F12, e você retornará à tela de configuração, e o programa será interrompido. Após esses passos, basta configurar o seu AssistBOT, clicar em iniciar, salvar suas configurações e aproveitar o jogo.</p>
+            <p>Após capturar a posição e RGB, use as teclas de atalho descritas no programa para habilidades, auto hur, utamo, utura e comida. Atribuir as teclas de atalho corretas para essas ações permitirá que o AssistBOT execute as tarefas desejadas de forma eficaz dentro do jogo. Depois de pressionar iniciar, a janela do Tibia entra em foco e a automação é executada com base nas configurações do usuário. Se desejar parar o BOT, basta pressionar F12, e você retornará à tela de configuração, e o programa será interrompido. Após esses passos, basta configurar, clicar em iniciar, salvar suas configurações e aproveitar o jogo.</p>
 
         </div>
 
